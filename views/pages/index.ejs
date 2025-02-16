@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>หน้าหลัก</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <h1>หน้าหลัก</h1>
+  
+  <% if (user) { %>
+    <p>สวัสดีคุณ <strong><%= user.username %></strong> (<%= user.role %>)</p>
+    <p><a href="/auth/logout">Logout</a></p>
+  <% } else { %>
+    <p>ยินดีต้อนรับ <strong>Guest</strong></p>
+    <p><a href="/">Login</a> หรือ <a href="/register">Register</a></p>
+  <% } %>
+
+</body>
+</html>

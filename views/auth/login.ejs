@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>เข้าสู่ระบบ - เว็บจัดการชมรม</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="logo">
+      <img src="/images/logo.png" alt="โลโก้เว็บจัดการชมรม">
+    </div>
+    <h1>เว็บจัดการชมรม</h1>
+    <h2>Login</h2>
+    
+    <!-- ฟอร์มส่งไปยัง /auth/login -->
+    <form action="/auth/login" method="POST">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    
+    <p>ยังไม่มีบัญชี? <a href="/register">Register</a></p>
+  </div>
+</body>
+</html>
